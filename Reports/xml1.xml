@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="13" time="134.108049">
+<testcase classname="As a admin, i want add order, so i can add orders manually" name="to add order" time="19.119805">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user is in order details page.........................................passed
+When user clicks on add new button..........................................passed
+Then enter order details firstname "Venkata Surya Deep" lastname "vasireddy" email "surya@gmail.com" telephone "8977899870" product "FULL SLEEVS SWEAT SHIRT" quantity "1" pfname "Venkata Surya Deep" plname "Vasireddy" paddress "13 4 45" pcity "Kakinada" ppostcode "533440" pcountry "India" pstate "Andhra Pradesh" sfname "Venkata Surya Deep" slname "Vasireddy" saddress "13 4 45" scity "Kakinada" spostcode "533440" scountry "India" sstate "Andhra Pradesh" comment "we are processing your order please wait" and save.passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin, i want delete option, to delete the orders" name="to delete the orders" time="9.869607">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user enter orderid "608" orderstatus "" customer "" total ""..........passed
+And click on filter button..................................................passed
+When user clicks on delete button...........................................passed
+Then alert message display..................................................passed
+And user confirm ok.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin, i want delete option, to delete the orders" name="to delete the orders 2" time="9.952434">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user enter orderid "606" orderstatus "" customer "" total "1500"......passed
+And click on filter button..................................................passed
+When user clicks on delete button...........................................passed
+Then alert message display..................................................passed
+And user confirm ok.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigate to order list" name="Click on add api" time="8.675168">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+When user click on add api button...........................................passed
+Then message appears success api modified...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check order list fetch" time="9.535453">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+When order list fetched.....................................................passed
+Then displayed in table.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check search filter" time="9.848024">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user check order list.................................................passed
+When user enter orderid "774" orderstatus "Canceled" customer "Rahul AVUDURTHI" total "1500".passed
+Then click on filter button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check search filter 2" time="9.870363">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user check order list.................................................passed
+When user enter orderid "" orderstatus "" customer "Rahul AVUDURTHI" total "1500".passed
+Then click on filter button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check search filter 3" time="9.50435">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user check order list.................................................passed
+When user enter orderid "" orderstatus "" customer "" total "1500"..........passed
+Then click on filter button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check search filter 4" time="9.974782">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user check order list.................................................passed
+When user enter orderid "" orderstatus "" customer "Rahul AVUDURTHI" total "".passed
+Then click on filter button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check search filter 5" time="9.078719">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user check order list.................................................passed
+When user enter orderid "" orderstatus "Complete" customer "" total ""......passed
+Then click on filter button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin i want order list" name="check search filter 6" time="9.488604">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user check order list.................................................passed
+When user enter orderid "" orderstatus "Pending" customer "" total "".......passed
+Then click on filter button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin, i want to view order details, to know complete information" name="select view button and update order status" time="9.481539">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user enter orderid "774" orderstatus "Canceled" customer "Rahul AVUDURTHI" total "1500".passed
+When user clicks on view button.............................................passed
+Then user redirected to full order details..................................passed
+And user update order status "Shipped" notifycustomer "Yes" comment "Your item was shipped".passed
+And click on add history....................................................passed
+And click on cancel.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a admin, i want to view order details, to know complete information" name="select view button and update order status 2" time="9.709201">
+<system-out><![CDATA[Given Admin is on login page................................................passed
+When Admin enter username and password......................................passed
+And click on submit button..................................................passed
+Then Redirects to homepage..................................................passed
+And navigate to Sales->Orders in sidemenu...................................passed
+Given user enter orderid "677" orderstatus "Canceled" customer "Arpithaa M" total "1500".passed
+When user clicks on view button.............................................passed
+Then user redirected to full order details..................................passed
+And user update order status "Complete" notifycustomer "Yes" comment "Congrats.. Please review and rate the product for us to serve u better".passed
+And click on add history....................................................passed
+And click on cancel.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
